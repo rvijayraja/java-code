@@ -1,1 +1,5 @@
-Echo "Test Webhook V1 "
+FROM openjdk
+WORKDIR /app
+COPY . /app
+RUN javac demo.java
+CMD [ "java", "demo" ]
